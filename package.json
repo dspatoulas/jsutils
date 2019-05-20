@@ -1,0 +1,24 @@
+{
+  "name": "jsutils",
+  "author": "DJ Spatoulas",
+  "version": "1.0.0",
+  "main": "dist/jsutils.cjs.js",
+  "module": "dist/jsutils.esm.js",
+  "browser": "dist/jsutils.umd.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "rollup": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
